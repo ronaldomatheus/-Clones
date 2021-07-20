@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+  <head>
+<!-- Meta tags Obrigatórias -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+<!-- Bootstrap CSS / direto do site-->
+<!--<link rel="stylesheet" href="css/css/bootstrap.min.css"> essa forma é de umar o bootstrap baixado-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+      integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+<!-- Font Awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css"
+      integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+
+    <!-- HTML5Shiv -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <![endif]-->
+
+<!--CSS Estilo customizado por mim-->
+    <link rel="stylesheet" type="text/css" href="css/estilo.css">
+
+    <title>Projeto - Spotify</title>
+    <!--ICON da barra de navegação!! -->
+    <link rel="icon" href="imagens/favicon.png">
+
+  </head>
+
+  <body>
+    <!--Inicio barra de Navegação -->
+    <header><!--cabeçalho-->
+      <!--inicio navbar-->
+      <nav class="navbar navbar-expand-md navbar-light fixed-top navbar-transparente">
+        <!--'navbar-transparente' -> criada por mim, customizada no estilo.css-->
+        <div class="container">
+          <!--LOGO-->
+          <a href="index.html" class="navbar-brand">
+            <img src="imagens/spotify.svg" width="145" alt="">
+          </a>
+
+          <!--------Hamburguer btn responsivo-->
+          <button class="navbar-toggler" data-toggle="collapse" data-target="#hamburgue">
+            <i class="fas fa-bars text-white"></i>
+          </button>
+
+          <!--------------- Inicio div principal -->
+          <div class="collapse navbar-collapse" id="hamburgue">
+            <ul class="navbar-nav ml-auto ">
+              <!--com essa NAVBAR-NAV as palavras ficaram uma ao lado da outra-->
+              <li class="nav-item">
+                <a href="" class="nav-link"> Inicio</a>
+              </li>
+              <li class="nav-item">
+                <a href="" class="nav-link"> Produtos</a>
+              </li>
+              <li class="nav-item">
+                <a href="" class="nav-link"> Postagem Recentes</a>
+              </li>
+              <li class="nav-item">
+                <a href="" class="nav-link">Inscrever-se </a>
+              </li>
+              <li class="nav-item">
+                <a href="" class="nav-link"> Entrar</a>
+              </li>
+            </ul> <!--/lista desordenada-->
+          </div><!--fim div pricipal das pesquisar -->
+        </div><!--fim container HEADER-->
+      </nav><!--fim navbar HEADER-->
+    </header> <!-- fim barra de navegação / fim cabeçalho-->
+
+<!---------------------Inicio home-->
+    <section id="home" class=" d-flex"> <!--ao usar o d-flex... fica um container flex item-->
+      <div class="container align-self-center">
+        <div class="row"> <!--row1-->
+          <div class="col-md-12 capa "> <!--inicio col 1-->
+            <h1 class="textoMusicaTodos fonteTextoMusica">
+              Música para Todos</h1>
+<!------- inicio btn principal-->
+            <a href="" class="btn btn-lg btn-custom btn-roxo">
+              Aproveite o Spotify Free
+            </a>
+            <a href="" class="btn btn-lg btn-custom btn-branco">
+              Obter o Spotify Premium
+            </a>
+          </div> <!--/ col 1-->   
+        </div><!--/ row 1-->  
+      </div> <!-- / container-->
+    </section><!--/ home-->
+    
+
+
+  <!--------------------Inicio CONTEUDO-->
+    <!--obs:rMatheus. todas essas numerações nos comentarios é aplicada diretamente nessa seção-->
+    <section id="conteudo" class="caixa"> 
+      <div class="container">
+        <div class="row"> <!--abriu row 1.0 da seção conteudo-->
+          <div class="col-md-6"> <!--inicio col 1 de conteudo-->
+            <div class="row    albuns"> <!--abri row 1.1-->
+
+              <div class="col-md-6"> <!--Inicio col 1.1-->
+                <img src="imagens/img1.jpg" class="img-fluid"><!-- d-none d-sm-block----seu eu quisesse esconder as img na tela SM. faria-->
+              </div><!--/ col 1.1-->
+
+              <div class="col-md-6 "><!--inicio col 1.2-->
+                <img src="imagens/img2.jpg" class="img-fluid">
+              </div><!--/ col 1.2-->
+            </div><!--/row 1.1-->
+            
+            <div class="row  albuns">  <!--row 1.3-->
+
+              <div class="col-md-6">
+                <img src="imagens/img3.jpg" class="img-fluid">
+              </div>  <!--/col-->
+            
+              <div class="col-md-6">
+                <img src="imagens/img4.jpg" class="img-fluid">
+              </div> <!--/col-->
+            </div> <!--/ row 1.3-->
+          </div> <!--/ COL 1.0-->
+
+          <div class="col-md-6"><!--inicio col 2.0-->  <!--que esta dentro de ROW 1.0 --- completando 12 colunas-->   
+            <h2 class="textoConteudoh2">O que o Spotify tem?</h2>
+            <h3 class="textoConteudoh3">Músicas</h3>
+            <p>Tem milhões de música. Escute seus sons favoritos, descubras novas musicas e reúna seus favoritos em um só
+              lugar </p>
+
+            <h3 class="textoConteudoh3"> Playlists</h3>
+            <p>No Spotify você encontra uma playlist para cada momento. Todas feitas por fanáticos e especialista de
+              músucas.</p>
+
+            <h3 class="textoConteudoh3">Novos Lançamentos</h3>
+            <p>Escute os novos lançamentos de singles e álbuns da semana e veja o que está bombando no top 50</p>
+
+          </div><!--/ COL 2.0-->
+        </div> <!--/ ROW 1.0-->
+      </div> <!--/ CONTAINER-->
+    </section><!--/ FIM CONTEUDO-->
+
+
+  <!--------------------------------------inicio  RECURSOS-->
+    <section id="recursos" class="caixa">
+      <div class="container"> 
+        <div class="row"> <!--ROW 1 de recursos-->
+          <div class="col-md-4"> <!--COL 1 de recursos-->
+            <!--textos-->
+            <h2>Fácil</h2>
+            <h3>Buscar</h3>
+            <p>Já sabe o que quer escutar? É só procurar e apertar o play</p>
+
+            <h3>Navegar</h3>
+            <p>Veja os novos lançamentos, o que ésta bombando nas paradas e as melhores Playlists para o momento</p>
+
+            <h3>Descobrir</h3>
+            <p>Curta musicas novas toda segunda-feira co lista de top50 </p>
+          </div><!--/ col 1-->
+
+          <!--CELULARES DE RECURSOS-->
+          <div class="col-md-8"> <!--col 2 ..... completei 12col de ROW recursos-->
+            <div class="row rotacionar" ><!--ROW 1.1 de recursos-->
+              <div class="col-md-6"> <!--col 2.1 de recursos-->
+                <!--imgs iphones-->
+                <img src="imagens/iphone1.png" class="img-fluid d-none d-md-block" >
+                </div> <!--/COL 2.1-->
+
+            
+
+              <div class="col-md-6"><!--COL 2.2 .....de recursos-->
+                <img src="imagens/iphone2.png" class="img-fluid d-none d-md-block" >
+
+              </div><!--COL 2.2-->
+              </div> <!--/row 1.1-->
+            </div><!--/col 2.0-->
+        </div><!--/ row 1 recursos-->
+      </div><!--/container recursos-->
+    </section><!--/recursos-->
+
+<!-----------------Inicio cabeçalho / rodapé-->
+    <footer id="rodape">
+      <div class="container">
+        <div class="row"><!--row 1.0 footer-->
+          <div class="col-md-2"><!--col 1.0 footer-->
+            <img src="imagens/spotify.svg" width="142">
+          </div><!--/col 1.0-->
+          <div class="col-md-2"><!--col 1.1-->
+            
+            <h4>Company</h4>
+            <ul class="navbar-nav ml-auto "> <!--navbar-nav ml-auto -> da uma formatação basica -->
+              <li><a href="">Sobre</a></li>
+              <li><a href="">Emprego</a></li>
+              <li><a href="">Imprensa</a></li>
+              <li><a href="">Novidades</a></li>
+            </ul>
+
+          </div> <!--/col 1.1-->
+
+          <div class="col-md-2"><!--col 1.2-->
+            <h4>Comunidades</h4>
+            <ul class="navbar-nav">
+              <li><a href="">Artistas</a></li>
+              <li><a href="">Desenvolvedores</a></li>
+              <li><a href="">Marcas</a></li>
+            </ul>
+
+          </div><!--/col 1.2-->
+
+          <div class="col-md-2"><!--col 1.3-->
+            <h4>LINK UTEIS</h4>
+            <ul class="navbar-nav">
+              <li><a href="">Ajudas</a></li>
+              <li><a href="">Presentes</a></li>
+              <li><a href="">Play da web</a></li>
+            </ul>
+          </div><!--/col 1.3-->
+          <div class="col-md-4" id="redeSocial"><!--col 1.4-->
+            <a href=""><i class="fab fa-facebook-square fa-3x ml-3 "></i></a>
+            <a href=""><i class="fab fa-twitter fa-3x ml-3 "></i></a>
+            <a href=""><i class="fab fa-instagram fa-3x ml-3 "></i></a>
+            <a href=""><i class="fab fa-whatsapp fa-3x ml-3"></i></a>
+          </div><!--/col 1.4-->
+        </div><!--/row footer-->
+      </div> <!--/container footer-->
+    </footer> <!--/ rodapé-->
+
+
+
+    <!--FINALIZANDO-->
+    <!-- JavaScript (Opcional) obs: sempre lembrar de chamar o js no final do codigo!!-->
+    <!-- jQuery primeiro, depois Popper.js, depois Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+      integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+      crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+      integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+      crossorigin="anonymous"></script>
+</body>
+
+</html>

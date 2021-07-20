@@ -1,0 +1,273 @@
+
+
+
+/************************ Layout */
+
+        body{
+             background: url(../imagens/capa.png), /*Esse backgroud vai ficar por baixo e vou acrescentar um por cima*/
+                url(../imagens/ruido.png),/*ficou muito interesante, esse tom de roxo em cima da outra img*/
+                linear-gradient(50deg,#ff4169,#7c26f8); /*deg -> degraus ...e cores!! */ /* se eu bem rapar as img ruido e capa elas tem uma certa transparencia por isso que a baixo dela tenho que acrescentar um degrade!! */
+                background-attachment: fixed;
+                /*quando criei essa  'linear-gradient' não apareceu nada porque eu ainda não tenho um conteudo no body, tipo o "fixed-top" -> com isso a barra de navegação sai do fluxo normal.
+                quando eu tiro, logo o BADY tem o conteudo , assim aplica 'alinear-gradient'!! ...para fins de teste, eu tirei da NAV o 'fixed-top' e apareceu as definiçoes acrescentada, as cores!! */
+                /*resumo: se tiver conteudo no body, entao aplica tudo normal as img*/
+                /*isso acontece porque as img tem opacidade!!*/
+                font-family:Helvetica, Arial,sans-serif;
+        }
+
+        /*Centralizando os conteudos/ musica para todos e btn*/
+
+        html ,body, #home{
+            height:100%;
+        /*para corigir o problema que apareceu na barra de rolagem de baixo: da seção recurso -> porque a img ultrapassou o limete */
+            overflow-x: hidden; /*hidden: faz sumir, do eixo x*/ 
+                
+        } 
+
+/**************************Barra de Navegação HEADER*/
+
+        nav.navbar-transparente{
+            padding: 15px 0px;
+            background:rgba(0,0,0,0.6);
+        }
+
+            /*mudei cor da letra da bara de navegação do cabeçalho*/
+        .navbar-light .navbar-nav .nav-link{ /*esse é o caminho onde ela se encontra, consegui esse caminho mais rapido: inspecionando no navegador!!!*/
+            color: white;
+        }
+            /*mudei cor da letra ao ser passar o cursor, da bara de navegação do cabeçalho*/
+        .navbar-light .navbar-nav .nav-link:hover { /* OBS: aqui há uma questão de especificidade, '.navbar-nav .nav-link' ele sobre poe a especificidade que acabei de criar para isso selecionei todas as classes e colei aqui!!*/     /* obs: usei a ferramenta de inspecionar e cliquei em AJUDA (arq: index.html ) por exemoplo*/  /*:hover -> para tirar o que fica grifado em baixo das letras*/   
+            color: #9bf0e1;               
+        }
+
+        .navbar-light .navbar-toggler{
+            color: rgba(255,255,255,.5);
+            border-color: rgba(255,255,255,0.5);
+        }
+
+            /*divide | -> a barra entre os btn: 'baixar' e 'inscrever-se' do header*/
+        .divisor{
+            width: 1px;
+            background: white;
+            /*ele veio com a altura de lista muito alto, para diminuir: */
+            margin: 12px 15px;
+        }
+
+/*************************** CAPA */
+        /*centralizando o texto 'MUSICA PARA TODOS' da 'CAPA'*/
+        .capa{
+            text-align: center;
+        }
+/*************************** btn-custom*/
+        .btn-custom{
+            color: white;
+            border-radius:500px ;
+            -webkit-border-radius:500px;
+            -moz-border-radius:500px ;
+            text-transform: uppercase;
+            transition:background 0.4s, color 0,4s ;
+            padding: 5px 10px;
+        }
+        /*btn tela inicial/principal*/
+        .btn-roxo{
+            background:#7c25f8;
+
+         }
+         /*Mudando cor dentro do btn-roxo -> de: home/principal*/
+        .btn-roxo:hover{
+            background:#6207e3;
+            color: white;
+        }
+
+        .btn-branco{
+            border: 2px solid white;
+                    
+        }
+
+        .btn-branco:hover{
+            background-color:white;
+             color: black;
+        }
+
+/*************************** CONTEUDO */
+        #conteudo{
+            background: white;
+            padding-top: 25px;
+            padding-bottom: 25px;
+        }
+
+        .albuns{ /*espaçamento entre as imagens da seção CONTEUDO*/
+            padding: 10px 0px;
+
+        }
+/* não utilizando 
+        #servicos{
+            background: white;
+        }
+
+        #servicos h2, h3{
+            color: #7c25f8;
+        }
+*/
+        #recursos{
+            color: white; /*cor do texto de recursos*/
+        }
+        
+        /*recursos da class de conteudo*/
+        #recursos h2{
+            color: white;
+                    
+        }
+        #recursos h3{
+            color: #9bf0e1;
+        }
+                /*
+            #recursos{
+                padding-top: 20px;
+                padding-bottom: 20px;*/  
+                /*ESTOU REPETINDO MUITO...O QUE POSSO FAZER É:*/
+            /*para nao repetir tanto usei uma caixa*/
+        .caixa{
+            padding-top: 30px;
+            padding-bottom: 25px;
+
+        }
+ /**************Rotacionar iphones**/
+        .rotacionar{
+            padding-left:80px; /**imagem ficou sobre o texto**/ /*teve um problema porque apareceu uma barra de rolagem porque o conteudo ultrapassou a area visivel*/
+        /*prefixos para os tranforme*/
+            -ms-transform: rotate(30deg);
+            -webkit-transform: rotate(30deg);
+            transform: rotate(30deg);
+        }
+
+ /*******************Redes sociais*/
+        #redeSocial{
+            float:right;
+            color: white;
+            right: 10px;
+            
+           
+        }
+
+
+       
+
+
+/*************************** Tipografia*/
+        .textoMusicaTodos{
+            font-weight:900;
+            letter-spacing: -0.05em ; /*controla o espaço entre as letras*/
+            margin-bottom:50px;
+            color: white;
+        }
+/****************************FONTE*/
+        .fonteTextoMusica{
+            font-family:Helvetica, Arial,sans-serif;
+        }
+
+        .textoConteudoh2{
+            font-size: 3em;
+            font-weight: 700; /*espesura da letra...grossura*/
+            letter-spacing: -0,04;
+            color: #7c25f8;
+        }
+
+        .textoConteudoh3{
+            font-size: 2em;
+            font-weight:700;
+            letter-spacing: -0.04;
+            color: #7c25f8;
+        }
+
+/****************RODAPÉ*******************/
+
+        #rodape{
+            background:#000;
+            padding:50px 0px 20px 0px;
+        /* 50px superior. 0px lateral_direita. 20px inferior. 0px lateral_esquerda*/
+            position: relative; /*'relative'-> para a parte preta do rodapé ficar sobre (em cima) da outra, no caso em cima dos celulares iphones*/
+        }
+
+        #rodape h4{
+            color: #919496; /* cor do texto em h4 do rodaé*/
+            font-size: 0.8em; /*diminui o tamanho do texto h4*/
+            text-transform:uppercase; 
+        }
+
+            /*Quero formatar os links que estão dentro dO nosso RODAPE NAVBAR-NAV a */
+        #rodape .navbar-nav a{
+            color: white;
+            font-size: 0.8em; /*diminui o tamanho da letra*/
+        }
+
+        #rodape .navbar-nav a:hover{
+            color: #9bf0e1;
+            text-decoration: none; /*elimino a sublinhação ao passar o ponteiro do mouse em cima*/
+        }
+        /*dentro do 'rodape' e 'i' do site (fontawesome)*/
+        #rodape i{
+            float: right;
+        }
+        #rodape a i{
+            color: white;
+        }
+        
+            
+/************************** MEDIA (peguei do site bootstrap)*/
+
+/*Há também consultas de mídia e mixinas para direcionar um único segmento de tamanhos de tela usando as larguras mínimas e máximas de ponto de interrupção.
+Cópia "media query" */
+
+/*Extra small devices (portrait phones, less than 576px)*/
+@media (max-width: 575.98px) { 
+    .fonteTextoMusica{
+        font-size:2em; /*3em equivale a 50px*/
+        }
+    .btn-custom{
+        margin: 10px 15px;
+            /*quando eusei essa resolução deu btn quebrado para consertar:*/
+        font-size: 1em;
+        }
+}
+
+/*Small devices (landscape phones, 576px and up)*/
+@media (min-width: 576px) and (max-width: 767.98px) { 
+    .fonteTextoMusica{
+    font-size:3em; /*3em equivale a 50px*/
+    }
+    .btn-custom{
+        margin: 10px 15px;
+        
+    }
+}
+
+/* Medium devices (tablets, 768px and up)*/
+@media (min-width: 768px) and (max-width: 991.98px) { 
+    .fonteTextoMusica{
+        font-size:4em; /*3em equivale a 50px*/
+        }
+}
+
+/* Large devices (desktops, 992px and up)*/
+@media (min-width: 992px) and (max-width: 1199.98px) { 
+    .fonteTextoMusica{
+        font-size:5em; /*3em equivale a 50px*/
+        }
+ }
+
+/* Extra large devices (large desktops, 1200px and up)*/
+@media (min-width: 1200px) { 
+    .fonteTextoMusica{
+        font-size:5em; /*3em equivale a 50px*/
+        }
+ }
+
+
+
+
+
+
+
+
+
