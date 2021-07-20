@@ -1,0 +1,14 @@
+#home {
+	background: #ffc107;
+	color: white;
+}
+
+/* criei uma linha na tela por questão de organização*/
+.caixa{ 
+	padding: 60px 0;
+	border-bottom: 1px solid #e5e5e5 ;
+}
+/* FOOTER dei um espaçamento no rodapé*/
+footer p a{
+	margin: 5px 15px;
+}
